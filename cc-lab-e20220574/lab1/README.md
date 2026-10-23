@@ -77,18 +77,6 @@ echo "Welcome to the EC2 Challenge" | sudo tee /var/www/html/index.html
 
 ---
 
-## Problems and how I solved them (optional)
-
-The Amazon Linux 2023 repository was unreachable from the instance in earlier attempts (`yum install` timed out). The issue was that the Learner Lab session had expired, cutting off outbound internet access. After restarting the Learner Lab session and launching a fresh instance, the repository became accessible and httpd installed successfully.
-
----
-
-## AI note (optional)
-
-Claude Code suggested using `sudo pkill -f "yum"` and removing the yum lock file when the package manager was stuck waiting for a background process. I verified the process ID with `ps aux` before killing it.
-
----
-
 ## Clean up
 
 - [x] Part 1.1: instance terminated, key pair and security group deleted.
