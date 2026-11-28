@@ -9,55 +9,61 @@
 
 ## Task 1 — Security Group
 
-![EC2 security group with SSH inbound rule](image/01-security-group.png)
+![EC2 security group with SSH inbound rule](images/01-security-group.png)
 
 ---
 
 ## Task 2 — EC2 Instance
 
-![Running instance and attached security group](image/02-ec2-running.png)
+![Running instance and attached security group](images/02-ec2-running.png)
 
 ---
 
 ## Task 3 — S3 Media Bucket
 
-![Media bucket with Block Public Access enabled](image/03-s3-media-bucket.png)
+![Media bucket with Block Public Access enabled](images/03-s3-bucket.png)
 
 ---
 
 ## Task 4 — RDS for MySQL
 
-![RDS instance identifier, status and endpoint](image/04-rds-mysql.png)
+![RDS instance identifier, status and endpoint](images/04-rds-sql.png)
 
 ---
 
 ## Task 6 — Aurora Endpoints
 
-![Aurora writer and reader endpoints and their status](image/05-aurora-endpoints.png)
+![Aurora cluster Available with writer and reader endpoints](images/05-aurora-cluster.png)
 
 ---
 
 ## Task 8 — DynamoDB Posts Table
 
-![Active posts table with String partition key post_id](image/06-dynamodb-table.png)
+![Active posts table with String partition key post_id](images/06-dynamodb-table.png)
 
 ---
 
 ## Task 9 — App Start
 
-![FastAPI on port 8000 and Vite on port 5173](image/07-app-start.png)
+![FastAPI on port 8000 and Vite on port 5173](images/07-app-start.png)
 
 ---
 
-## Task 10 — Published Post
+## Task 10 — App in Browser
 
-![Browser showing published post with image](image/08-app-post.png)
+![Application in browser at 127.0.0.1:5173 with address bar visible](images/08-app-browser.png)
 
 ---
 
-## Task 10 — DynamoDB Post Item
+## Task 10 — Final Infrastructure
 
-![DynamoDB item with post_id and media key](image/09-post-item.png)
+![Collage of EC2, security group, RDS, Aurora, DynamoDB and S3](images/09-final-infrastructure.png)
+
+---
+
+## Task 10 — Signup and Post
+
+![Signup page and sample post](images/10-signup-post.png)
 
 ---
 
@@ -93,9 +99,9 @@
 
 ## Clean up
 
-- [ ] RDS instance deleted (no final snapshot).
-- [ ] Aurora cluster and writer deleted (no final snapshot).
-- [ ] DynamoDB `posts` table deleted.
-- [ ] S3 bucket emptied and deleted.
-- [ ] EC2 instance terminated.
-- [ ] Security groups deleted.
+- [x] RDS instance deleted (no final snapshot).
+- [x] Aurora cluster and writer deleted (no final snapshot).
+- [x] DynamoDB `posts` table deleted.
+- [x] S3 bucket emptied and deleted.
+- [x] EC2 instance terminated.
+- [x] Security groups deleted.
